@@ -7,6 +7,8 @@ return {
           "lua_ls",
           "html",
           "emmet_language_server",
+          "cssls",
+          "tailwindcss",
         },
       }
     end,
@@ -26,6 +28,8 @@ return {
       lspconfig.lua_ls.setup { capabilities = capabilities }
       lspconfig.html.setup { capabilities = capabilities }
       lspconfig.emmet_language_server.setup { capabilities = capabilities }
+      lspconfig.cssls.setup { capabilities = capabilities }
+      lspconfig.tailwindcss.setup { capabilities = capabilities }
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
