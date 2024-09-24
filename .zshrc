@@ -126,3 +126,10 @@ esac
 export PATH="$PATH:/home/sam/.local/bin"
 
 PATH=~/.console-ninja/.bin:$PATH
+
+# Herd injected PHP 8.3 configuration.
+export HERD_PHP_83_INI_SCAN_DIR="/Users/sam/Library/Application Support/Herd/config/php/83/"
+
+
+# Herd injected PHP binary.
+export PATH="/Users/sam/Library/Application Support/Herd/bin/":$PATH
