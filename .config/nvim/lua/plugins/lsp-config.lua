@@ -9,6 +9,7 @@ return {
           "emmet_language_server",
           "cssls",
           "tailwindcss",
+          "jdtls",
         },
       }
     end,
@@ -30,6 +31,7 @@ return {
       lspconfig.emmet_language_server.setup { capabilities = capabilities }
       lspconfig.cssls.setup { capabilities = capabilities }
       lspconfig.tailwindcss.setup { capabilities = capabilities }
+      lspconfig.jdtls.setup { capabilities = capabilities }
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
