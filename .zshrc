@@ -133,3 +133,6 @@ export HERD_PHP_83_INI_SCAN_DIR="/Users/sam/Library/Application Support/Herd/con
 
 # Herd injected PHP binary.
 export PATH="/Users/sam/Library/Application Support/Herd/bin/":$PATH
+
+# Java
+export JAVA_HOME='/Users/sam/OpenJDK-21.jdk/Contents/Home'
