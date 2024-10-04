@@ -10,6 +10,8 @@ return {
           "cssls",
           "tailwindcss",
           "jdtls",
+          "svelte",
+          "ts_ls",
         },
       }
     end,
@@ -32,6 +34,8 @@ return {
       lspconfig.cssls.setup { capabilities = capabilities }
       lspconfig.tailwindcss.setup { capabilities = capabilities }
       lspconfig.jdtls.setup { capabilities = capabilities }
+      lspconfig.svelte.setup { capabilities = capabilities }
+      lspconfig.ts_ls.setup {capabilities = capabilities }
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
