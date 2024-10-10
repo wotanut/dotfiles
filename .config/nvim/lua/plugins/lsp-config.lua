@@ -12,6 +12,8 @@ return {
           "jdtls",
           "svelte",
           "ts_ls",
+          "black",
+          "pyright",
         },
       }
     end,
@@ -36,6 +38,7 @@ return {
       lspconfig.jdtls.setup { capabilities = capabilities }
       lspconfig.svelte.setup { capabilities = capabilities }
       lspconfig.ts_ls.setup {capabilities = capabilities }
+      lspconfig.pyright.setup {capabilities = capabilities }
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
