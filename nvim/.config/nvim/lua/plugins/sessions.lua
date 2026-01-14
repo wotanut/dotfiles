@@ -4,9 +4,9 @@ return {
 
   ---enables autocomplete for opts
   ---@module "auto-session"
-  ---@type AutoSession.Config
   opts = {
     suppressed_dirs = { "~/", "~/Projects", "~/Downloads", "/" },
     -- log_level = 'debug',
+    bypass_session_save_file_types = { "neo-tree" },
   },
 }
